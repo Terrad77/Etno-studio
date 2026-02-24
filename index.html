@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
+    />
+    <link rel="icon" type="images/x-icon" href="data:image/png;base64,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" />
+    <title>Etno dream project</title>
+    
+    <script type="module" crossorigin src="/Etno-studio/assets/index-9159da61.js"></script>
+    <link rel="stylesheet" href="/Etno-studio/assets/index-8d3d748a.css">
+  </head>
+  <body>
+    <header class="header-page">
+  <div class="container">
+    <nav class="nav-header">
+      <a href="./index.html" class="logo"
+        ><img
+          src="data:image/png;base64,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"
+          alt="logo icon"
+          width="44"
+          height="39"
+        />
+      </a>
+      <ul class="menu-list">
+        <li>
+          <a href="#3" class="site-nav">About us</a>
+        </li>
+        <li>
+          <a href="#4" class="site-nav">Our collection</a>
+        </li>
+        <li>
+          <a href="#5" class="site-nav">CUSTOMER ORDER</a>
+        </li>
+        <li>
+          <a href="#6" class="site-nav">TEstimonials</a>
+        </li>
+      </ul>
+    </nav>
+    <address class="address">
+      <a href="tel:+380684439426" class="address-tel">+380 (68) 443-94-26</a>
+      <ul class="addres-social-icons-list">
+        <li class="size-icons">
+          <a
+            href="https://www.facebook.com/goITclub/"
+            target="_blank"
+            class="link"
+          >
+            <svg width="28" height="28" class="icons">
+              <use href="/Etno-studio/assets/icon-231ee1bc.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="size-icons">
+          <a
+            href="https://www.instagram.com/goitclub/"
+            target="_blank"
+            class="link"
+          >
+            <svg width="28" height="28" class="icons">
+              <use href="/Etno-studio/assets/icon-231ee1bc.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="size-icons">
+          <a href="https://www.youtube.com/c/GoIT" target="_blank" class="link">
+            <svg width="28" height="28" class="icons">
+              <use href="/Etno-studio/assets/icon-231ee1bc.svg#icon-youtube"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <button type="button" class="button-burger-menu">
+        <svg width="36" height="24" class="mobile-menu-open-icon">
+          <use
+            href="/Etno-studio/assets/nav-1290a2a1.svg#icon-nav"
+            aria-label="open burger menu"
+          ></use>
+        </svg>
+      </button>
+    </address>
+  </div>
+</header>
+
+<!-- Mobile menu, add class  is-open -->
+
+<div class="mobile-menu">
+  <a href="tel:+380684439426" class="address-tel">+380 (68) 443-94-26</a>
+  <button class="mobile-menu-btn-close" type="button">
+    <svg
+      width="36"
+      height="36"
+      class="mobile-menu-icon-close"
+      aria-label="mobile menu close icon"
+    >
+      <use href="/Etno-studio/assets/icon-231ee1bc.svg#icon-close-icon"></use>
+    </svg>
+  </button>
+  <nav class="mobile-menu-nav">
+    <ul class="mobile-menu-nav-list">
+      <li>
+        <a href="#3" class="site-nav">About us</a>
+      </li>
+      <li>
+        <a href="#4" class="site-nav">Our collection </a>
+      </li>
+      <li>
+        <a href="#5" class="site-nav">CUSTOMER ORDER</a>
+      </li>
+      <li>
+        <a href="#6" class="site-nav">TEstimonials</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+    <main>
+      <section class="hero" id="2">
+  <div class="container hero-container">
+    <div class="hero-main-photo">
+      <img
+        class="hero-photo"
+        srcset="/Etno-studio/assets/girl-phone-b9163733.jpg 335w, /Etno-studio/assets/girl-phone@2x-6b67315f.jpg 670w, /Etno-studio/assets/Girl-table-cd2654e3.jpg 413w, /Etno-studio/assets/Girl-table@2x-09181021.jpg 826w, /Etno-studio/assets/girl-desktop-981a8d47.jpg 392w, /Etno-studio/assets/girl-desktop@2x-48c257f3.jpg 784w"
+        sizes="(min-width: 1280px) 392px, (min-width: 768px) 413px, (max-width: 767px) 335px"
+        src="/Etno-studio/assets/girl-phone-b9163733.jpg"
+        alt="woman in gray shirt"
+      />
+    </div>
+    <div class="hero-contents">
+      <h1 class="hero-title">
+        Reviving the traditional
+        <span class="hero-span">Ukrainian</span> artistry in every stitch.
+      </h1>
+      <a href="#5" class="hero-order-link"
+        ><span class="hero-btn-span">Order</span>
+        <svg class="arrow-icon" width="26" height="10">
+          <use href="/Etno-studio/assets/hero-icon-c3395ae0.svg#icon-arrow"></use>
+        </svg>
+      </a>
+    </div>
+    <div class="hero-side-photos">
+      <div class="star-contents">
+        <svg class="star-icon" width="52" height="51">
+          <use href="/Etno-studio/assets/hero-icon-c3395ae0.svg#icon-star-hero"></use>
+        </svg>
+        <p class="star-text">all embroidery is made by hand</p>
+      </div>
+      <img
+        class="map-pic"
+        srcset="/Etno-studio/assets/shoulder-table-a0add75f.png 157w, /Etno-studio/assets/shoulder-table@2x-0c77d586.png 314w, /Etno-studio/assets/shoulder-desktop-6cb07ca5.png 142w, /Etno-studio/assets/shoulder-desktop@2x-8877594d.png 284w"
+        sizes="(min-width:1280px) 142px, (min-width:768px) 157px"
+        src="/Etno-studio/assets/shoulder-table-a0add75f.png"
+        alt="map of Ukraine"
+      />
+    </div>
+  </div>
+</section>
+
+      <section class="about-us" id="3">
+  <div class="about-wrap-flex">
+    <div class="about-us-text-wrap">
+      <h2 class="about-us-title">About Us</h2>
+      <p class="about-us-text">
+        The store "Vyshyvanka Vibes" is a place where traditional Ukrainian
+        vyshyvanka comes to life with new zest and style. Our store offers a
+        wide selection of high-quality and authentic embroidery, which combines
+        the elegance of traditional needlework and modern design.
+      </p>
+      <p class="about-us-text">
+        In "Vyshyvanka Vibes" you will find various models of embroidery, from
+        classic to modern, corresponding to the latest fashion trends. Our
+        embroidery is made using natural fabrics and is embroidered by highly
+        qualified craftsmen who convey the beauty of Ukrainian culture in every
+        detail.We believe that vyshyvanka is not just clothing, but a symbol of
+        national pride, the heritage of our ancestors and a way of expressing
+        one's individuality. Each embroidery from "Vyshyvanka Vibes" has its own
+        unique history and symbolism, which gives it a special meaning.
+      </p>
+    </div>
+    <div class="about-us-img-wrap">
+      <img
+        srcset="/Etno-studio/assets/girl-and-boy-1440px-41ed2efe.jpg 709w, /Etno-studio/assets/girl-and-boy-1440px@2-99740fc5.jpg 1418w, /Etno-studio/assets/girl-and-boy-1280px-d0a013e1.jpg 594w, /Etno-studio/assets/girl-and-boy-1280px@2-08bd45d0.jpg 1188w, /Etno-studio/assets/girl-and-boy-table-8cfd3920.jpg 704w, /Etno-studio/assets/girl-and-boy-table@2-dece47e0.jpg 1408w, /Etno-studio/assets/girl-and-boy-phone-b6bfafda.jpg 335w, /Etno-studio/assets/girl-and-boy-phone@2-bb8224c8.jpg 670w"
+        sizes="(min-width:1440px) 709px, (min-width: 1280px) 594px, (min-width: 768px) 704px, (max-width: 767px) 335px"
+        class="about-us-img"
+        src="/Etno-studio/assets/girl-and-boy-phone-b6bfafda.jpg"
+        alt="sleeve vyshyvanka"
+      />
+    </div>
+  </div>
+</section>
+
+      <section class="section-collection" id="4">
+  <div class="container-our-collection collection-back-image">
+    <h2 class="title-collection">Our collection</h2>
+    <ul class="list-collection">
+      <li class="item-collection">
+        <img
+          class="image-collection"
+          srcset="/Etno-studio/assets/1-shirt-23fc4c1f.jpg 400w, /Etno-studio/assets/1-shirt@2x-9b564abf.jpg 800w, /Etno-studio/assets/1-shirt-1280px-53c6bbd8.jpg 347w, /Etno-studio/assets/1-shirt-1280px@2x-6aa24954.jpg 694w, /Etno-studio/assets/1-shirt-table-93c6405a.jpg 342w, /Etno-studio/assets/1-shirt-table@2x-78f08cb9.jpg 684w, /Etno-studio/assets/1-shirt-phone@2x-68fb3fca.jpg 670w"
+          sizes=" (min-width:1440px) 400px, (min-width:1280px) 347px, (min-width:768px) 342px, (max-width:767px) 335px "
+          src="/Etno-studio/assets/1-shirt-phone-9faf92e8.jpg"
+          alt="AUGUST Poltava women's blouseRING"
+        />
+        <div class="container-price">
+          <h3 class="product-name">AUGUST Poltava women's blouseRING</h3>
+          <p class="price">3300 UAH</p>
+        </div>
+      </li>
+      <li class="item-collection">
+        <img
+          class="image-collection"
+          srcset="/Etno-studio/assets/2-shirt-7e867b22.jpg 400w, /Etno-studio/assets/2-shirt@2x-d8dcf49f.jpg 800w, /Etno-studio/assets/2-shirt-1280px-254d25fd.jpg 347w, /Etno-studio/assets/2-shirt-1280px@2x-f94c8418.jpg 694w, /Etno-studio/assets/2-shirt-table-bec44c82.jpg 342w, /Etno-studio/assets/2-shirt-table@2x-02be7dbf.jpg 684w, /Etno-studio/assets/2-shirt-phone@2x-faced6b0.jpg 670w"
+          sizes=" (min-width: 1440px ) 400px, (min-width: 1280px ) 347px, (min-width: 768px) 342px, (max-width: 767px) 335px "
+          src="/Etno-studio/assets/2-shirt-phone-f971f6fd.jpg"
+          alt="Women's blouse Gorgany"
+        />
+        <div class="container-price">
+          <h3 class="product-name">Women's blouse Gorgany</h3>
+          <p class="price">3350 UAH</p>
+        </div>
+      </li>
+      <li class="item-collection">
+        <img
+          class="image-collection"
+          srcset="/Etno-studio/assets/3-shirt-14e56a90.jpg 400w, /Etno-studio/assets/3-shirt@2x-eb7018b2.jpg 800w, /Etno-studio/assets/3-shirt-1280px-20e2b7b2.jpg 347w, /Etno-studio/assets/3-shirt-1280px@2x-9f2e1b14.jpg 694w, /Etno-studio/assets/3-shirt-table-15fda0c8.jpg 342w, /Etno-studio/assets/3-shirt-table@2x-6c605004.jpg 684w, /Etno-studio/assets/3-shirt-phone@2x-3376cf84.jpg 670w"
+          sizes=" (min-width: 1440px ) 400px, (min-width: 1280px ) 347px, (min-width: 768px) 342px, (max-width: 767px) 335px "
+          src="/Etno-studio/assets/3-shirt-phone-f2da0eb3.jpg"
+          alt="Women's blouse Crimea"
+        />
+        <div class="container-price">
+          <h3 class="product-name">Women's blouse Crimea</h3>
+          <p class="price">4000 UAH</p>
+        </div>
+      </li>
+      <li class="item-collection">
+        <img
+          class="image-collection"
+          srcset="/Etno-studio/assets/4-shirt-a3ec0341.jpg 400w, /Etno-studio/assets/4-shirt@2x-acc6ea58.jpg 800w, /Etno-studio/assets/4-shirt-1280px-b9a92e81.jpg 347w, /Etno-studio/assets/4-shirt-1280px@2x-2360b330.jpg 694w, /Etno-studio/assets/4-shirt-table-4556e620.jpg 342w, /Etno-studio/assets/4-shirt-table@2x-afbc747a.jpg 684w, /Etno-studio/assets/4-shirt-phone@2x-79ede55e.jpg 670w"
+          sizes=" (min-width: 1440px ) 400px, (min-width: 1280px ) 347px, (min-width: 768px) 342px, (max-width: 767px) 335px "
+          src="/Etno-studio/assets/4-shirt-phone-a9574e2f.jpg"
+          alt="Men's shirt Verkhovina"
+        />
+        <div class="container-price">
+          <h3 class="product-name">Men's shirt Verkhovina</h3>
+          <p class="price">3100 UAH</p>
+        </div>
+      </li>
+      <li class="item-collection">
+        <img
+          class="image-collection"
+          srcset="/Etno-studio/assets/5-shirt-3831bb58.jpg 400w, /Etno-studio/assets/5-shirt@2x-119f51aa.jpg 800w, /Etno-studio/assets/5-shirt-1280px-3f53cf67.jpg 347w, /Etno-studio/assets/5-shirt-1280px@2x-058a91a5.jpg 694w, /Etno-studio/assets/5-shirt-table-6710507c.jpg 342w, /Etno-studio/assets/5-shirt-table@2x-e62b94a1.jpg 684w, /Etno-studio/assets/5-shirt-phone@2x-d02f73f2.jpg 670w"
+          sizes=" (min-width: 1440px ) 400px, (min-width:1280px) 347px, (min-width: 768px) 342px, (max-width: 767px) 335px "
+          src="/Etno-studio/assets/5-shirt-phone-078ac37c.jpg"
+          alt="Mountain men's shirt"
+        />
+        <div class="container-price">
+          <h3 class="product-name">Mountain men's shirt</h3>
+          <p class="price">3300 UAH</p>
+        </div>
+      </li>
+      <li class="item-collection">
+        <img
+          class="image-collection"
+          srcset="/Etno-studio/assets/6-shirt-4ff8d34e.jpg 400w, /Etno-studio/assets/6-shirt@2x-4abf23ef.jpg 800w, /Etno-studio/assets/6-shirt-1280px-93052df8.jpg 347w, /Etno-studio/assets/6-shirt-1280px@2x-6ccec4f3.jpg 694w, /Etno-studio/assets/6-shirt-table-f48c14eb.jpg 342w, /Etno-studio/assets/6-shirt-table@2x-64c58d95.jpg 684w, /Etno-studio/assets/6-shirt-phone@2x-8bb4ddd0.jpg 670w"
+          sizes="(min-width: 1440px ) 400px, (min-width: 1280px ) 347px, (min-width: 768px) 342px, (max-width: 767px) 335px "
+          src="/Etno-studio/assets/6-shirt-phone-9a89b5cd.jpg"
+          alt="Men's shirt Yasen"
+        />
+        <div class="container-price">
+          <h3 class="product-name">Men's shirt Yasen</h3>
+          <p class="price">1700 UAH</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section class="section-your-order section" id="5">
+  <div class="image-girl-background"></div>
+  <div class="container container-your-order">
+    <div class="container-order-form">
+      <h2 class="title-your-order" id="your-order">
+        <span class="title-yellow">Your order</span> is our priority:
+        Personalized approach and quality of service
+      </h2>
+      <form class="form-order">
+        <div class="input-box">
+          <input
+            class="input"
+            id="user-name"
+            name="user-name"
+            type="text"
+            pattern="[A-Za-z0-9]"
+            placeholder=" Enter your full name"
+          />
+        </div>
+        <div class="input-box">
+          <input
+            class="input"
+            type="email"
+            name="email"
+            id="email"
+            pattern="(?=.*[a-z])(?=.*[A-Z])"
+            placeholder="Enter your email"
+          />
+        </div>
+
+        <div class="comments-box">
+          <textarea
+            class="comment"
+            name="user-comment"
+            placeholder="Comments"
+            id="user-comment"
+          ></textarea>
+        </div>
+        <button class="button-send" type="submit">
+          Send
+          <svg class="send-svg" width="26" height="10">
+            <use href="/Etno-studio/assets/icon-24021d25.svg#icon-arrow"></use>
+          </svg>
+        </button>
+      </form>
+    </div>
+    <div class="img-girl-container">
+      <img
+        class="image-girl"
+        srcset="/Etno-studio/assets/Rectangle-5edff26a.jpg 524w, /Etno-studio/assets/Rectangle@2x-f9d0e523.jpg 1048w, /Etno-studio/assets/Rectangle-tablet-c5a45df6.jpg 638w, /Etno-studio/assets/Rectangle-tablet@2x-fa66ffb2.jpg 1276w"
+        sizes="(min-width: 1280px) 524px, (max-width: 1280px) 638px"
+        src="/img/your_order/Rectangle.jpg"
+        alt="girl"
+      />
+    </div>
+  </div>
+</section>
+
+      <section class="testimonials" id="6">
+  <div class="testimonials-container container">
+    <h2 class="testimonials-title">Testimonials</h2>
+    <ul class="testimonials-list">
+      <li class="testimonials-list-item">
+        <div class="testimonials-list-img-box position-box">
+          <img
+            class="testimonials-list-item-img"
+            srcset="/Etno-studio/assets/maria@2x-66c5d142.png 2x"
+            src="/Etno-studio/assets/maria-66d4d8ae.png"
+            alt="Maria Tkachuk"
+            width="64"
+            height="64"
+          />
+        </div>
+        <h3 class="testimonials-list-title">Maria Tkachuk</h3>
+        <p class="testimonials-list-desc">
+          I was pleasantly surprised by the variety of embroidery offered by
+          Vyshyvanka Vibes. They have models for every taste - from classic to
+          modern. I bought an embroidered dress to celebrate a special occasion
+          and received impeccable service and refinement in every detail.
+        </p>
+      </li>
+      <li class="testimonials-list-item">
+        <div class="testimonials-list-img-box position-box">
+          <img
+            class="testimonials-list-item-img"
+            srcset="/Etno-studio/assets/sergey@2x-e2585ec8.png 2x"
+            src="/Etno-studio/assets/sergey-45e2bac6.png"
+            alt="Sergey Rybachok"
+            width="64"
+            height="64"
+          />
+        </div>
+        <h3 class="testimonials-list-title">Sergey Rybachok</h3>
+        <p class="testimonials-list-desc">
+          Vyshyvanka Vibes exceeds all my expectations! Their vyshyvanka are
+          simply masterpieces! I fell in love with the quality of the materials
+          and the skill of the artisans behind each product. This is my favorite
+          embroidery shop where I always find something special and unique.
+        </p>
+      </li>
+      <li class="testimonials-list-item">
+        <div
+          class="testimonials-list-img-box position-box { top: -24px; left: 50%; transform: translateX(-50%); }"
+        >
+          <img
+            class="testimonials-list-item-img"
+            srcset="/Etno-studio/assets/natalia@2x-5f8f805f.png 2x"
+            src="/Etno-studio/assets/natalia-731afccc.png"
+            alt="Natalia Chatuk"
+            width="64"
+            height="64"
+          />
+        </div>
+        <h3 class="testimonials-list-title">Natalia Chatuk</h3>
+        <p class="testimonials-list-desc">
+          Vyshyvanka Vibes is a real find for everyone who appreciates Ukrainian
+          culture. Their embroidery reflects the spirit and traditions of our
+          people. I not only buy embroidered shirts for myself, but also give
+          them to my friends abroad as a symbol of our beauty and national
+          pride.
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+    </main>
+    <footer class="footer-section">
+  <div class="footer-main-wrapper">
+    <ul class="footer-list">
+      <li class="footer-item">
+        <a href="#3">About us</a>
+      </li>
+      <li class="footer-item">
+        <a href="#4">Our collection</a>
+      </li>
+      <li class="footer-item">
+        <a href="#5">Customer order</a>
+      </li>
+      <li class="footer-item">
+        <a href="#6">Testimonials</a>
+      </li>
+    </ul>
+    <h2 class="footer-text">
+      A touch of <span class="footer-accent">Ukrainian</span> culture in every
+      embroidery
+    </h2>
+  </div>
+</footer>
+
+    
+  </body>
+</html>
