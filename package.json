@@ -6,11 +6,14 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build --base=/Etno-studio/",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
-    "vite": "^4.0.5",
-    "glob": "^8.1.0"
+    "gh-pages": "^6.3.0",
+    "glob": "^8.1.0",
+    "vite": "^4.5.0"
   },
   "author": "Terrad77 <terlovoy77@gmail.com>",
   "license": "ISC",
