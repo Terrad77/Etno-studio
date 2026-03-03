@@ -1,0 +1,170 @@
+/* BASE */
+
+.section-collection {
+  margin-bottom: 80px;
+}
+.container-our-collection {
+  max-width: 375px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.title-collection {
+  color: var(--white, #fcf9f9);
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.37;
+  letter-spacing: 0.02em;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.list-collection {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.item-collection {
+  display: block;
+}
+.collection-back-image {
+  background-position-x: 0;
+  background-position-y: 298px;
+  background-size: 72px 177px;
+  background-image: url(../img/our-collection/phone/elements-phone.png);
+  background-repeat: no-repeat;
+}
+.image-collection {
+  border-radius: 4px;
+}
+.container-price {
+  padding-top: 18px;
+}
+.product-name {
+  color: var(--white, #fcf9f9);
+  text-overflow: ellipsis;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.price {
+  color: rgba(252, 249, 249, 0.4);
+  font-family: Manrope;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.05em;
+}
+
+/* MOBILE */
+
+@media screen and (min-width: 375px) {
+  .container-our-collection {
+    min-width: 320px;
+    max-width: 375px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .item-collection {
+    width: 335px;
+  }
+}
+@media screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px),
+  screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
+  .collection-back-image {
+    background-image: url(../img/our-collection/phone/elements-phone@2x.png);
+  }
+}
+
+/* TABLET */
+
+@media screen and (min-width: 768px) {
+  .section-collection {
+    margin-bottom: 100px;
+  }
+  .container-our-collection {
+    min-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .title-collection {
+    color: var(--white, #fcf9f9);
+    font-size: 44px;
+    font-weight: 500;
+    line-height: 1.45;
+    letter-spacing: 0.03em;
+  }
+  .collection-back-image {
+    background-position-y: 100px;
+    background-size: 114px 300px;
+    background-image: url(../img/our-collection/table/elements-table.png);
+  }
+  .list-collection {
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 20px;
+  }
+  .item-collection {
+    width: 342px;
+  }
+}
+@media screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
+  .collection-back-image {
+    background-image: url(../img/our-collection/table/elements-table@2x.png);
+  }
+}
+
+/* DESKTOP 1280PX */
+
+@media screen and (min-width: 1280px) {
+  .section-collection {
+    margin-bottom: 150px;
+  }
+  .container-our-collection {
+    min-width: 1080px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .collection-back-image {
+    background-size: 169px 300px;
+    background-image: url(../img/our-collection/desktop-1280px/elements-collection-1280px.png);
+  }
+  .list-collection {
+    row-gap: 40px;
+  }
+  .item-collection {
+    width: calc((100% - 40px) / 3);
+  }
+}
+@media screen and (min-resolution: 192dpi) and (min-width: 128px),
+  screen and (min-resolution: 2dppx) and (min-width: 1280px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 1280px) {
+  .collection-back-image {
+    background-image: url(../img/our-collection/desktop-1280px/elements-collection-1280px@2x.png);
+  }
+}
+
+/*  DESKTOP 1440PX */
+
+@media screen and (min-width: 1440px) {
+  .container-our-collection {
+    min-width: 1090px;
+  }
+  .collection-back-image {
+    background-size: 169px 300px;
+    background-image: url(../img/our-collection/desktop-1440px/elements-collection-1440px.png);
+  }
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 1440px),
+  screen and (min-resolution: 2dppx) and (min-width: 1440px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
+  .collection-back-image {
+    background-image: url(../img/our-collection/desktop-1440px/elements-collection-1440px@2x.png);
+  }
+}
